@@ -3,7 +3,11 @@ package stack;
 public class Runner {
 
 	public static void main(String[] args) {
-		System.out.println("Welcome to stack problem");
+		Stack stack = new Stack();
+		stack.push(70);
+		stack.push(30);
+		stack.push(56);
+		stack.show();
 	}
 
 }
