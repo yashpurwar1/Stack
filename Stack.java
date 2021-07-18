@@ -1,5 +1,5 @@
 package stack;
-
+import java.util.*;
 public class Stack {
 	MyNode head;
 	Stack(){
@@ -11,6 +11,26 @@ public class Stack {
 	        temp.next = head;
 	        head = temp;
 	}
+	
+	public void pop() {
+		head = (head).next;
+	}
+	
+	public boolean isEmpty()
+    {
+        return head == null;
+    }
+	
+	public int peek()
+    {
+        if (!isEmpty()) {
+            return head.data;
+        }
+        else {
+            System.out.println("Stack is empty");
+            return -1;
+        }
+    }
 	public void show() {
 		MyNode node = head;
 		while(node.next!=null) {

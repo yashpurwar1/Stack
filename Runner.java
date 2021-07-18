@@ -8,6 +8,17 @@ public class Runner {
 		stack.push(30);
 		stack.push(56);
 		stack.show();
+		System.out.println();
+		System.out.println(stack.peek());
+		stack.pop();
+		System.out.println();		
+		System.out.println(stack.peek());
+		stack.pop();
+		System.out.println();
+		System.out.println(stack.peek());
+		stack.pop();
+		
+		
 	}
 
 }
